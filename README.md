@@ -19,6 +19,7 @@ This project was developed as part of the **ProU Technology – Track 3 Full-Sta
 
 
 ## Demo Video  and image
+ <img width="947" height="470" alt="farm2home images" src="https://github.com/user-attachments/assets/93def5d8-3616-4db5-a7f5-51b292fdcad1" />
   https://github.com/user-attachments/assets/a4b0d62d-13b5-4edd-812a-7a15e01ec668
 
 # Project Overview
