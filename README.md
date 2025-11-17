@@ -1,85 +1,112 @@
-# Farm2Home
+# Farm2Home — Full-Stack Marketplace (React + FastAPI)
 
-Farm2Home is a full-stack example marketplace connecting farmers and customers. This repository contains a Python FastAPI backend and a React + Vite frontend for browsing products, managing carts, and tracking orders.
+Farm2Home is a full-stack web application that connects **farmers directly with customers**, eliminating middlemen and ensuring fair pricing for agricultural products.
 
-**Project Structure**
+The platform includes:
 
-- `backend/`: FastAPI backend, dependencies, and startup script.
-- `frontend/`: React + Vite frontend application and UI components.
-- `RUN_INSTRUCTIONS.md`: Quick run notes and scripts.
-- `START_BACKEND.bat`, `START_FRONTEND.bat`: Convenience Windows scripts to start each service.
+- A modern **React + Vite frontend**
+- A fully functional **FastAPI backend**
+- **SQLite database**
+- **Authentication pages**
+- **Cart system**
+- **Payment Page**
+- **Chat Support widget**
+- **Farmer Dashboard**
+- **Customer Store**
+- **Full CRUD for products**
 
-**Tech Stack**
+This project was developed as part of the **ProU Technology – Track 3 Full-Stack Development Online Assessment**.
 
-- Backend: Python, FastAPI, Uvicorn
-- Frontend: React, Vite, JavaScript, ESLint
 
-## Prerequisites
+## Demo Video  and image
+  https://github.com/user-attachments/assets/a4b0d62d-13b5-4edd-812a-7a15e01ec668
 
-- Python 3.10+ (Windows)
-- Node.js 16+ / npm 8+ (or a compatible Node version)
+# Project Overview
 
-## Backend — Setup (Windows PowerShell)
+Farm2Home is designed to demonstrate complete full-stack development:
 
-Open PowerShell and run:
+- **Frontend UI** (React + Vite)  
+- **Backend APIs** (FastAPI)  
+- **Database storage** (SQLite)  
+- **Authentication flows**  
+- **Chat widget for support**  
+- **Payment flow after checkout**  
+- **Clean and professional UI design**
 
-```powershell
-cd backend
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install --upgrade pip
-pip install -r requirements.txt
-# Start the FastAPI server
-uvicorn app.main:app --reload --port 8000
-```
+The system includes separate experiences for:
 
-You can also use the provided batch script:
+### ✔ Farmers  
+Manage products, update prices, delete items, track inventory.
 
-```powershell
-.\START_BACKEND.bat
-```
+### ✔ Customers  
+Browse products, add to cart, adjust quantity, proceed to payment, chat with support.
 
-The backend will typically serve the API at `http://127.0.0.1:8000` (check `backend/app/main.py` for exact mount).
+# Features
 
-## Frontend — Setup (Windows PowerShell)
+## Farmer Features
+- Farmer Login Page  
+- Add new product  
+- Update product price  
+- Delete products  
+- Product dashboard with grid layout  
+- Upload image via URL  
+- Smooth responsive UI  
+- Auto-refresh product list  
 
-Open a new PowerShell window and run:
+## Customer Features
+- Customer Login Page  
+- View store page  
+- Product details page  
+- Add to cart  
+- Increase/decrease quantity  
+- Remove products from cart  
+- Persistent cart (LocalStorage)  
+- Checkout screen  
+- Payment page (UPI / Card / COD simulation)  
 
-```powershell
-cd frontend
-npm install
-# Start the Vite dev server
-npm run dev
-```
+## Payment Page (NEW)
+- After checkout, customers are redirected to payment screen  
+- Displays order summary  
+- Select payment mode (UPI, Card, COD)  
+- Simulated payment confirmation  
+- Redirects to success page  
 
-Or use the bundled batch script:
+## Chat Widget (NEW)
+- Floating chat box at bottom-right  
+- Works on all customer pages  
+- Customer can ask questions  
+- Auto-reply / scripted chatbot responses  
+- Fully functional front-end interaction  
 
-```powershell
-.\START_FRONTEND.bat
-```
+## Authentication (NEW)
+- Farmer Login  
+- Customer Login  
+- Simple form validation  
+- Redirects to respective dashboards  
+- Session stored using LocalStorage  
 
-Vite's dev server usually runs at `http://localhost:5173` (the terminal will show the exact URL).
+# 🛠️ Tech Stack
 
-## Notes & Environment
+### **Frontend**
+- React.js  
+- Vite  
+- React Router DOM  
+- JavaScript (ES6)  
+- Custom CSS (Modern UI)  
+- LocalStorage for cart persistence  
 
-- If the backend requires environment variables or a database, check `backend/app` for config files or `.env` usage.
-- This project includes helpful scripts and a `get-pip.py` file in `backend/` for environments that need it.
+### **Backend**
+- Python  
+- FastAPI  
+- SQLAlchemy ORM  
+- SQLite Database  
+- Pydantic Models  
+- CORS Middleware  
+- Uvicorn Server  
 
-## Contributing
-
-Contributions are welcome. Create issues for bugs or feature requests, and open pull requests for proposed changes.
-
-## License
-
-Add a license of your choice here (e.g., MIT). If you want, I can add a `LICENSE` file.
-
-## Questions
-
-If you'd like, I can:
-
-- Add more detailed API documentation (list endpoints and example requests).
-- Improve the frontend README with development notes for components.
-- Add a `Makefile` or PowerShell scripts to start both services concurrently.
-
----
-Created/updated by assistant to consolidate project setup instructions.
+### **Tools**
+- Cursor / VS Code  
+- Git & GitHub  
+- Node.js & npm  
+- Python pip  
+- Batch scripts for fast startup 
