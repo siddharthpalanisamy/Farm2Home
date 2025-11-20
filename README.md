@@ -65,28 +65,28 @@ Browse products, add to cart, adjust quantity, proceed to payment, chat with sup
 - Checkout screen  
 - Payment page (UPI / Card / COD simulation)  
 
-## Payment Page (NEW)
+## Payment Page 
 - After checkout, customers are redirected to payment screen  
 - Displays order summary  
 - Select payment mode (UPI, Card, COD)  
 - Simulated payment confirmation  
 - Redirects to success page  
 
-## Chat Widget (NEW)
+## Chat Widget 
 - Floating chat box at bottom-right  
 - Works on all customer pages  
 - Customer can ask questions  
 - Auto-reply / scripted chatbot responses  
 - Fully functional front-end interaction  
 
-## Authentication (NEW)
+## Authentication
 - Farmer Login  
 - Customer Login  
 - Simple form validation  
 - Redirects to respective dashboards  
 - Session stored using LocalStorage  
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ### **Frontend**
 - React.js  
